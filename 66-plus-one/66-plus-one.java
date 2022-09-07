@@ -4,16 +4,16 @@ class Solution {
         
         int car=1;
         for(int i=digits.length-1;i>=0;i--){
-            
             if(car+digits[i]>=10){
                 list.add(0);
-                car =1;
+                car=1;
             }
             else{
               list.add(car+digits[i]);
                 car=0;
             }
         }
+        
         if(car ==1){
             list.add(1);
         }
@@ -25,6 +25,7 @@ class Solution {
             result[i]=a;
             i++;
         }
+        
         return result;
     }
 }
