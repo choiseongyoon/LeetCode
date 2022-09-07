@@ -13,11 +13,9 @@ class Solution {
                 car=0;
             }
         }
-        
-        if(car ==1){
+        if(car==1){
             list.add(1);
         }
-        
         Collections.reverse(list);
         int[] result = new int[list.size()];
         int i =0;
