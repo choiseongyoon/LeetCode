@@ -12,9 +12,7 @@ class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         // Corner case
         if(head == null || head.next == null) return head;
-        
-        // Compare current node with next node
-        // If the same, skip next node
+
         ListNode curr = head;
         while(curr.next != null) {
             if(curr.val == curr.next.val) {
