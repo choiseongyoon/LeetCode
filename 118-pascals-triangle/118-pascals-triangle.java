@@ -8,14 +8,13 @@ class Solution {
             list.add(1);
             sum.add(list);
         }
-
         
         for(int i=2;i<=numRows;i++){
             list = new ArrayList<>();
             list.add(1);
             for(int j=1;j<i-1;j++){
                 list.add( sum.get(i-2).get(j)+sum.get(i-2).get(j-1) );
-            } 
+            }
             list.add(1);
             sum.add(list);
         }
