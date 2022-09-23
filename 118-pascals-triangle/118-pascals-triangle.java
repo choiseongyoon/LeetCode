@@ -8,14 +8,9 @@ class Solution {
             list.add(1);
             sum.add(list);
         }
-        if(numRows >= 2){
-            list = new ArrayList<>();
-            list.add(1);
-            list.add(1);   
-            sum.add(list);
-        }
+
         
-        for(int i=3;i<=numRows;i++){
+        for(int i=2;i<=numRows;i++){
             list = new ArrayList<>();
             list.add(1);
             for(int j=1;j<i-1;j++){
