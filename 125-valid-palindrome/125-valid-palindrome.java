@@ -7,8 +7,6 @@ class Solution {
             if((a.charAt(i) >= 'a' && a.charAt(i)<='z')||a.charAt(i) >= '0' && a.charAt(i)<='9')
                 list.add( a.charAt(i));
         }
-        // if(list.size()==0)
-        //     return true;
         for(int i = 0;i<list.size()/2;i++){
              if(list.get(i)!=list.get(list.size()-i-1))
                  return false;
